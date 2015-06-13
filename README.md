@@ -1,4 +1,4 @@
-sBotClass
+sCache Class
 =========
 
 Kolay kullanımlı PHP dosya cache sistemi
