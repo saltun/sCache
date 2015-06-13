@@ -19,7 +19,7 @@ require_once "sCache.php";
 ```
 
 Sayfamızın en üst kısmın'da sCache'i çalıştıralım.
-** eğer sayfanın en üstünde çalıştırmaz iseniz cache tam anlamı ile çalışmaz **
+**eğer sayfanın en üstünde çalıştırmaz iseniz cache tam anlamı ile çalışmaz**
 
 ``` php
 $sCache = new sCache();
