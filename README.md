@@ -7,6 +7,9 @@ Kolay kullanımlı PHP dosya cache sistemi
 - Load hesaplama özelliği
 
 
+Youtube üzeri anlatım => **[sCache Kullanımı](https://www.youtube.com/watch?v=ti4p3LhLYzk)**
+
+
 
 2 Adımda Kurulum
 ===========================
