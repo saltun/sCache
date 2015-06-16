@@ -6,6 +6,7 @@
 * GİT : http://github.com/saltun
 * Date : 13.06.2015
 * Update : 13.06.2015
+* @todo redis support need
 */
 class sCache {
 	
