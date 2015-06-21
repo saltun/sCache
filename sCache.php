@@ -5,7 +5,7 @@
 * Mail : savascanaltun@gmail.com
 * GİT : http://github.com/saltun
 * Date : 13.06.2015
-* Update : 21.06.2015
+* Update : 13.06.2015
 */
 class sCache {
 	
@@ -44,7 +44,8 @@ class sCache {
 			
 		}
 
-		$myPage=explode('/',$_SERVER['REQUEST_URI']);
+
+		$myPage=explode('/',$_SERVER["SCRIPT_FILENAME"]);
 		
 		foreach ($this->external as $key => $external) {
 			if (in_array(end($myPage), $this->external)) {
