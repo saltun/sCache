@@ -5,7 +5,7 @@
 * Mail : savascanaltun@gmail.com
 * GİT : http://github.com/saltun
 * Date : 13.06.2015
-* Update : 13.06.2015
+* Update : 21.06.2015
 */
 class sCache {
 	
