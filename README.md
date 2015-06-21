@@ -5,6 +5,7 @@ Kolay kullanımlı PHP dosya cache sistemi
 
 - Sıkıştırma Özelliği
 - Load hesaplama özelliği
+- Belirlediğiniz sayfaları ön belleklemez ( options kısmına bakınız )
 
 
 Youtube üzeri anlatım => **[sCache Kullanımı](https://www.youtube.com/watch?v=ti4p3LhLYzk)**
@@ -41,6 +42,7 @@ Ayarları düzenlemek için dizi olarak ayarları göndermeniz gerekir bunu nas�
 
 
 
+
 Ayarlar ( Options )
 ===========================
 Ayarları bir dizi halinde sınıfın başlangıcında göndermeniz gerekir göndere bileceğiniz değerler ise altta listelenmiştir
@@ -48,7 +50,7 @@ Ayarları bir dizi halinde sınıfın başlangıcında göndermeniz gerekir gön
 - dir = Cache dosyalarınızın tutulacağı dizin adı. Yok ise otomatik oluşturulur ( standart **sCache** ) 
 - buffer = Oluşturulan cache dosyalarında sıkıştırılma yapılmasını ister iseniz **true** değerini göndermelisiniz ( standart kapalıdır ) 
 - load = Sayfanın load süresi yani açılma süresinin en altta görünmesini istiyor iseniz **true** değeri göndermelisiniz.
-
+- external = Cache harici sayfaları bir dizi olarak gönderir iseniz bu dosyalar cachelenmez.
 Şimdi yukarıdaki özelliklerin hepsini kullanarak örnek bir ayar dizini oluşturup gönderelim.
 
 ``` php
@@ -56,7 +58,8 @@ $options = array(
 	'time'   => 120, // 120 saniye yani 2 dakika
 	'dir'    => 'sCache2', // sCache2 klasörü oluşturup buraya yazılsın.
 	'buffer' => true, // html sayfalarımızın sıkıştırılmasını aktif edelim.
-	'load'   => true  // sayfamızın sonunda load değerimiz görünsün.
+	'load'   => true,  // sayfamızın sonunda load değerimiz görünsün.
+	'external'=>array('nocache.php','nocache2.php'), // Burada belirttiğiniz sayfalar ( dosyalar ) cachelenmez.
 	);
 
 $sCache = new sCache($options); // ayarları sınıfımıza gönderip sınıfı çalıştıralım.
