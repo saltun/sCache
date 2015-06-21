@@ -58,8 +58,8 @@ class sCache {
 		
 
 
-			if(!file_exists($this->dir)){
-				mkdir($this->dir, 0777);
+			if(!file_exists(dirname(__FILE__)."/".$this->dir)){
+				mkdir(dirname(__FILE__)."/".$this->dir, 0777);
 			}
 
 			if ($this->load) {
