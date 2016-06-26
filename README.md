@@ -54,6 +54,7 @@ Ayarları bir dizi halinde sınıfın başlangıcında göndermeniz gerekir gön
 - load = Sayfanın load süresi yani açılma süresinin en altta görünmesini istiyor iseniz **true** değeri göndermelisiniz.
 - external = Cache harici sayfaları bir dizi olarak gönderir iseniz bu dosyalar cachelenmez.
 Şimdi yukarıdaki özelliklerin hepsini kullanarak örnek bir ayar dizini oluşturup gönderelim.
+- extension = Oluşturulacak cache dosyasının uzantısını belirleme olanağı sağlar eğer bir değer girmez iseniz standart olarak .html olarak oluşturacaktır.
 
 ``` php
 $options = array(
