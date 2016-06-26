@@ -5,7 +5,7 @@
 * Mail : savascanaltun@gmail.com
 * GİT : http://github.com/saltun
 * Date : 13.06.2015
-* Update : 13.06.2015
+* Update : 26.06.2016
 */
 class sCache {
 	
@@ -18,6 +18,8 @@ class sCache {
 	private  $load=false;
 	private  $external=array();
 	private  $type=true;
+	private  $extension=".html";
+
 
 	public function __construct($options=NULL){
 
@@ -33,6 +35,10 @@ class sCache {
 				if(isset($options['time']))   	  $this->time = $options['time'];
 				if(isset($options['load']))  	  $this->load = $options['load'];
 				if(isset($options['external']))   $this->external = $options['external'];
+				if(isset($options['extension']))   $this->extension = $options['extension'];
+
+
+				
 
 
 		
@@ -70,7 +76,7 @@ class sCache {
 		
 			
 
-			 $this->cache  =  dirname(__FILE__)."/".$this->dir."/".md5($_SERVER['REQUEST_URI']).".html";
+			 $this->cache  =  dirname(__FILE__)."/".$this->dir."/".md5($_SERVER['REQUEST_URI']).$this->extension;
 
 			 if(time() - $this->time < @filemtime($this->cache)) { 
 			      readfile($this->cache); 
@@ -119,6 +125,7 @@ class sCache {
 		
 	}
 
+
 	public function __destruct(){
 
 		if ($this->type) {
@@ -140,7 +147,11 @@ class sCache {
 						echo "Load Time (S) :  {$total_time} ";
 				}
 
+		
+
 				ob_end_flush();
 		}
 	}
+
+
 }

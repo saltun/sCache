@@ -1,14 +1,18 @@
 <?php 
-require_once('sCache.php');
+require_once('../sCache.php');
 
 $options = array(
 	'time'   => 20,
 	'dir'    => 'sCache',
 	'buffer' => true,
-	'load'   => true 
+	'load'   => true,
+	'extension' => '.scache' 
 	);
 
+
 $sCache = new sCache($options);
+
+
 
 
 

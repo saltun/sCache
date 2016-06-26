@@ -6,9 +6,11 @@ Kolay kullanımlı PHP dosya cache sistemi
 - Sıkıştırma Özelliği
 - Load hesaplama özelliği
 - Belirlediğiniz sayfaları ön belleklemez ( options kısmına bakınız )
+- Dosya uzantısı ve dizin belirleme olanağı 
+- Hızlı entegrasyon özelliği sadece sınıfı çağırmak yeterli.
 
 
-Youtube üzeri anlatım => **[sCache Kullanımı](https://www.youtube.com/watch?v=ti4p3LhLYzk)**
+Youtube üzeri anlatım ( eski sürüm / old versiyon and turkish ) => **[sCache Kullanımı](https://www.youtube.com/watch?v=ti4p3LhLYzk)**
 
 
 
@@ -59,7 +61,8 @@ $options = array(
 	'dir'    => 'sCache2', // sCache2 klasörü oluşturup buraya yazılsın.
 	'buffer' => true, // html sayfalarımızın sıkıştırılmasını aktif edelim.
 	'load'   => true,  // sayfamızın sonunda load değerimiz görünsün.
-	'external'=>array('nocache.php','nocache2.php'), // Burada belirttiğiniz sayfalar ( dosyalar ) cachelenmez.
+	'external'=>array('nocache.php','nocache2.php'), // Burada belirttiğiniz sayfalar ( dosyalar ) cachelenmez.,
+	'extension' => ".scache", // standart değer .html olarak ayarlanmıştır cache dosyalarınızın uzantısını temsil etmektedir.
 	);
 
 $sCache = new sCache($options); // ayarları sınıfımıza gönderip sınıfı çalıştıralım.
