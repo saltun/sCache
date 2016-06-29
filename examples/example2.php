@@ -2,7 +2,7 @@
 /*
 * Clear all cache files
 */
-require_once "sCache.php";
+require_once "../sCache.php";
 
-$sCache = new sCache;
+$sCache = new sCache("",false); // cache system close and all cache files clear
 $sCache->clearCache();

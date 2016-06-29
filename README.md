@@ -69,6 +69,13 @@ $options = array(
 $sCache = new sCache($options); // ayarları sınıfımıza gönderip sınıfı çalıştıralım.
 ```
 
+Cache sistemini kapatma
+===========================
+Cache sisemini kapatmak isterseniz ayarlar değişkeninden sonra 2. değer olarak false değerini gönderir iseniz cache sistemi aktif olmayacaktır. (  example3.php)
+``` php
+$sCache = new sCache($options,false);
+```
+
 
 Tüm Cache dosyalarını temizleme
 ===========================
