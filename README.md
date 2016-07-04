@@ -12,6 +12,7 @@ Kolay kullanımlı PHP dosya cache sistemi
 
 Youtube üzeri anlatım ( eski sürüm / old versiyon and turkish ) => **[sCache Kullanımı](https://www.youtube.com/watch?v=ti4p3LhLYzk)**
 
+Redis Desteği ile kullanım =>  **[Döküman](https://github.com/saltun/sCache/tree/master/Redis)**
 
 
 2 Adımda Kurulum
