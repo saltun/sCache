@@ -49,7 +49,7 @@ Ayarları düzenlemek için dizi olarak ayarları göndermeniz gerekir bunu nas�
 Ayarlar ( Options )
 ===========================
 Ayarları bir dizi halinde sınıfın başlangıcında göndermeniz gerekir göndere bileceğiniz değerler ise altta listelenmiştir
-- time = Cachenin tutulacağı süre dilimi ( standart 60 saniye ) 
+- time = Cachenin tutulacağı süre değeri ( standart 60 saniye ) 
 - dir = Cache dosyalarınızın tutulacağı dizin adı. Yok ise otomatik oluşturulur ( standart **sCache** ) 
 - buffer = Oluşturulan cache dosyalarında sıkıştırılma yapılmasını ister iseniz **true** değerini göndermelisiniz ( standart kapalıdır ) 
 - load = Sayfanın load süresi yani açılma süresinin en altta görünmesini istiyor iseniz **true** değeri göndermelisiniz.
